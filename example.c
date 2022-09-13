@@ -1,18 +1,17 @@
 #include <stdio.h>
-double getAverage(int a[], int size);
 int main(){
-	int a[3] = {1, 2, 3};
-	double avg;
-	avg = getAverage(a, 2);
-	printf("The result is %f \n", avg);
-}
-double getAverage(int a[], int size){
-	double sum=0;
-	double avg;
-	for(int i=0; i<size; ++i){
-		sum += a[i];
-	}
-	return sum / size;
+	char s1[80];
+
+char s2[80];
+printf("Enter first word:\n");
+fgets(s1, 80, stdin);
+printf("Enter second word:\n");
+fgets(s2, 80, stdin);
+if (s1 == s2)
+    printf("Words are the same\n");
+else
+    printf("Words are different\n");
+
 
 }
 
