@@ -4,6 +4,7 @@ int main(){
 
 char s2[80];
 printf("Enter first word:\n");
+printf("This is a test");
 fgets(s1, 80, stdin);
 printf("Enter second word:\n");
 fgets(s2, 80, stdin);
