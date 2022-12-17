@@ -28,7 +28,7 @@ void paralizedImplementation(int size){
     int i;
     #pragma omp parallel for num_threads(4)
     for(i=1; i < size; i++){
-        a[i] = (i * (i+1)) / 2;
+        a[i] = 
     }
     printf("\n\nThe result for parallel version is: \n");
     printTheResult(a, size);
